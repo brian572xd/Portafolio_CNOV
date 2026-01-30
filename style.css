@@ -22,7 +22,7 @@
     height: 0.5rem;
     width: 20%;
     background-color: blue;
-    color: blue;
+    color:  white;
     margin-left: 40%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -118,12 +118,29 @@ footer{
     justify-content: space-between;
 }
 
+/*sitio responsivo*/
 @media (max-width :600px){
-    .fila1{
-    padding: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 15rem;
+.htmlimg{
+    width: 7rem;
+    height: 7rem;
+    padding: 2.5px;
+    border-radius: 15%;
+    background: linear-gradient(45deg, #ede4e4, #5a5d74);
+} 
+
+.cssimg{
+     width: 7rem;
+    height: 7rem;
+    padding: 2.5px;
+    border-radius: 15%;
+    background: linear-gradient(45deg, #ede4e4, #5a5d74);
+}
+
+#tecnica{
+    margin-left: 0.3rem;
+    margin-top: 6px;
+    width: 6.0rem;
+    height: 6.0rem;
+    border-radius: 15%;
 }
 }
