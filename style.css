@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*diseño de menu desplegable*/
+#menu{
+    justify-content: center;
+    width: 100%;
+}
+
+.titulos{
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    text-align: center;
+    background-size: 50%;
+    background: linear-gradient(180deg, #ede4e4, #da3e12);
+    height: 25rem;
+}
+
+#separador{
+    height: 0.5rem;
+    width: 20%;
+    background-color: blue;
+    color: blue;
+    margin-left: 40%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 45%;
+}
+
+#titulos_presentacion{
+    text-align: center;
+}
+
+.presentacion{
+    padding: 0px 7rem;
+    text-align: center;
+}
+
+
+.informacion_personal{
+    padding: 0px 7rem;
+    text-align: center;
+}
+
+.infoTecnica h2{
+    text-align: center;
+
+}
+
+.fila1{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 15rem;
+}
+
+/*Diseño del area tecnica*/
+.htmlimg{
+    width: 14rem;
+    height: 14rem;
+    padding: 5px;
+    border-radius: 15%;
+    background: linear-gradient(45deg, #ede4e4, #5a5d74);
+}
+
+.cssimg{
+    width: 14rem;
+    height: 14rem;
+    padding: 5px;
+    border-radius: 15%;
+    background: linear-gradient(45deg, #ede4e4, #5a5d74);
+}
+
+#tecnica{
+    margin-left: 3.7rem;
+    margin-top: 12px;
+    width: 6.0rem;
+    height: 6.0rem;
+    border-radius: 15%;
+}
+
+.contacto{
+    background-color: orange;
+    padding: 4rem;
+}
+
+.formulario{
+    padding: 1.5rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formulario input{
+    width: 60%;
+}
+
+.formulario textarea{
+    width: 60%;
+}
+
+.btn{
+    width: 20rem;
+    background-color: #da3e12;
+}
+
