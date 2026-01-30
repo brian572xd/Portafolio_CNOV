@@ -144,5 +144,20 @@ footer{
     border-radius: 15%;
 }
 
+.presentacion{
+    padding: 0px 3.5rem;
+    text-align: center;
+}
+
+
+.informacion_personal{
+    padding: 0px 3.5rem;
+    text-align: center;
+}
+
+.contacto{
+    padding: 2rem;
+}
+
 
 }
