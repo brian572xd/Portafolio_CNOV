@@ -117,3 +117,13 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width :600px){
+    .fila1{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 15rem;
+}
+}
