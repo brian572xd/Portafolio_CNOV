@@ -18,6 +18,15 @@
     height: 25rem;
 }
 
+.titulos_1{
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    text-align: center;
+    background-size: 50%;
+    background: linear-gradient(180deg, #ede4e4, #0b2aa9);
+    height: 10rem;
+}
+
 #separador{
     height: 0.5rem;
     width: 20%;
@@ -38,10 +47,13 @@
     text-align: center;
 }
 
+.presentacion a{
+    text-decoration: none;
+}
 
-.informacion_personal{
-    padding: 0px 7rem;
-    text-align: center;
+
+.t_tareas{
+   color: #28409e;
 }
 
 .infoTecnica h2{
@@ -118,6 +130,11 @@ footer{
     justify-content: space-between;
 }
 
+.Descripcion{
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+}
 /*sitio responsivo*/
 @media (max-width :800px){
 .htmlimg{

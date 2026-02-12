@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1 Actividad 1</title>
+     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+<!--Barra de navegacion-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Inicio     </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Parcial 1
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="P1ACT1.html">Actividad 1</a></li>
+            <li><a class="dropdown-item" href="P1ACT2.html">Actividad 2</a></li>
+            <li><a class="dropdown-item" href="P1ACT3.html">Actividad 3</a></li>
+            <li><a class="dropdown-item" href="P1ACT4.html">Actividad 4</a></li>
+            <li><a class="dropdown-item" href="P1ACT5.html">Actividad 5</a></li>
+            <li><a class="dropdown-item" href="P1ACT6.html">Actividad 6</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Parcial 2
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Actividad 1</a></li>      
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Parcial 3
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Actividad 1</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Fin de la barra de navegación-->
+ <div class="titulos_1">
+            <br>
+            <h2>Parcial 1</h2>
+            <h3>Actividad 2</h3>
+            <h4>Análisis de servicios de seguridad (X.800 y RFC 4949)</h4>
+        </div>
+    </header>
+    <section class="presentacion">
+      <br>
+         <h4>Descripción de la actividad</h4>
+         <br>
+         <h5>Objetivo general:</h5>
+         <br>
+         <p>Analizar escenarios de incidentes deseguridad informáticamediante la
+aplicación de los seis servicios de seguridad definidos en el ITU-TX.800 y
+el uso preciso de la terminología establecida en el RFC4949,con el fin de
+fortalecer la capacidad del estudiante para identificar, explicar y
+documentar vulneraciones de seguridad en contextos reales.</p>
+          <br>
+          <h5>Objetivos especificos:</h5>
+          <br>
+          <ul style="text-align: left;">
+            <li><b>Identificar</b> los servicios de seguridad del ITU-TX.800 comprometidos
+en distintos escenarios de incidente, reconociendo la interrelación
+entre autenticación, control de acceso, confidencialidad, integridad ,no
+repudio y disponibilidad.</li>
+              <li> <b> Aplicar correctamente</b> la terminologíaydefinicionesdel RFC4949
+para describir de manera técnica y estandarizada los tipos de
+amenazas, vulnerabilidades, ataques e impactos asociados a cada
+escenarioanalizado.</li>
+                <li><b>Relacionar y contrastar</b> el enfoque conceptual del ITU-TX.800 conel
+marco terminológico del RFC 4949, demostrando su
+complementariedad para la comunicación profesional, el análisis
+ técnico y la documentación de incidentes de seguridad informática.</li>
+          </ul>
+    </section>
+    <br>
+    <hr style="margin-left: 12.5%; margin-right: 12.5%;">
+    <section class="presentacion">
+      <br>
+          <h4>Desarrollo de la actividad</h4> 
+          <br>
+          <h5 class="t_tareas">Contenido</h5>
+          <br>
+          <div class="list-group" style="width: 50%; margin-left: 25%;">
+            <a href="#c1_t2p1"> <button type="button" class="list-group-item list-group-item-action">Introducción</button> </a>
+            <a href="#c2_t2p1"><button type="button" class="list-group-item list-group-item-action">Contexto del X.800 y RFC 4949</button></a>
+            <a href="#c3_t2p1"><button type="button" class="list-group-item list-group-item-action">Desarrollo</button></a> 
+            <a href="#c4_t2p1"><button type="button" class="list-group-item list-group-item-action">Conclusión</button></a>
+            <a href="#c5_t2p1"><button type="button" class="list-group-item list-group-item-action">Referencias</button></a>
+            <a href="#c6_t2p1"><button type="button" class="list-group-item list-group-item-action">Descargar archivo PDF</button></a>
+          </div>
+          <br>
+          <br>
+          <h5 class="t_tareas" id="c1_t2p1">Introducción</h5>  
+          <br> 
+          <p style="text-align: justify;">En este documento se verán escenarios en los que se presentan vulnerabilidades o situaciones, en 
+              las cuales se podrán identificar los puntos importantes de dichos escenarios, como cuales servicios 
+              de x.800 fueron comprometidos y también con la ayuda del RFC 4949 identificar el tipo de 
+              vulneración que paso, de estos archivos también importante mencionarlos porque nos ayudarán a 
+              obtener definiciones que nos serán útiles para saber que está pasando.
+          </p>
+          <br>
+            <h5 class="t_tareas" id="c2_t2p1">Contexto del X.800 y RFC 4949</h5>
+            <br>
+            <p style="text-align: justify;">Para comenzar es importante saber de para que nos sirven y de que tratan estos dos conceptos el 
+              primero, la x.800 define seis servicios de seguridad fundamentales, aplicables a cualquier sistema 
+              de comunicación los cuales se definen como:
+            </p>
+              <br>
+              <ol style="text-align: left;">
+                <li>Autentificación: Verifica la identidad de las entidades que se comunican. </li>
+                <li>Control de acceso: Garantiza que solo usuarios autorizados puedan acceder a recursos.</li>
+                <li>Confidencialidad de los datos: Protege la información de accesos no autorizados durante la 
+                    transmisión. </li>
+                 <li>Integridad de los datos: Asegura que los datos no sean alterados durante la transmisión.</li>
+                 <li>No repudio: Evita que una entidad niegue haber participado en una transacción.</li>
+                 <li>Disponibilidad: Garantiza que los sistemas y servicios estén operativos cuando se necesiten.</li>
+              </ol>
+              <br>
+              <p style="text-align: justify;">Por otro lado, el RFC 4949 es uno de los documentos más importantes en materia de criminología y 
+                fundamentos conceptuales de seguridad informática. Es emitido por la IEFT y sirve como un glosario 
+                oficial de los términos utilizados en el ámbito de la seguridad en las redes, criptografía y protocolos 
+                de internet. 
+                <br><br>
+                El nombre completo es “RFC 4949: Internet Security Glossary, Version 2”, se le atribuye a Russell  L. 
+                (Russ) Shirey, del U.S. Department of Defense (DoD) y fue publicaso en Agosto de 2007, finalmente 
+                fue emitido por IETF (Internet Engineering Task Force) — organismo responsable de los estándares 
+                técnicos de Internet. 
+              </p>
+              <br>
+              <h5 class="t_tareas" id="c3_t2p1">Desarrollo</h5>
+              <br>
+<table class="table table-bordered border-primary" style="text-align: justify;">
+  <tbody>
+    <tr style="text-align: center;">
+      <th colspan="5">
+        Escenarios a Analizar
+      </th>
+    </tr>
+<!--Escenario 1-->
+    <tr>
+      <th colspan="5">Escenario 1 <br>
+      En múltiples incidentes atribuidos al grupo LockBit, organizaciones públicas y privadas han sufrido el 
+      cifrado masivo de servidores tras un acceso inicial no autorizado. Antes de ejecutar el ransomware, los 
+      atacantes exfiltraron información sensible y posteriormente amenazaron con su publicación, 
+      evidenciando un compromiso simultáneo de la confidencialidad, la integridad y la disponibilidad. </th>
+    </tr>
+<!--Columnas de datos-->
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Integridad de los datos, Disponibilidad, control de acceso</th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">Multi-stage attack: ataque compuesto por fases. 
+        Data breach: divulgacion de datos no autorizada </th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Externa </th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Compromiso de credenciales y pérdida del control 
+        del sistema al poder ejecutar un ransomware </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Filtración de datos sensibles</th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Copias de seguridad aisladas y verificacion doble al entrar al sistema</th>
+    </tr>
+<!--Escenario 2-->
+    <tr>
+        <th colspan="5">Escenario 02 <br>
+          En diversos casos documentados, bases de datos completas quedaron accesibles 
+          públicamente debido a errores de configuración en servicios de almacenamiento en la nube. No 
+          existió una explotación técnica sofisticada, sino una falla en el control de acceso, lo que derivó 
+          directamente en la pérdida de confidencialidad de los datos. 
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Autentificación, Control de acceso Integridad de los datos</th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">Misconfiguration: Estado de un sistema accesible que crea vulnerabilidades Unauthorized Disclosure: Divulgacion no autorizada.</th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Externa </th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Los atacantes buscan activamente estos errores con escáneres automatizados. </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Perdida completa de confidencialidad </th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Configuración de privilegios de privilegios de la nube y herramientas de seguridad en la nube. </th>
+    </tr>
+    <!--Escenario 3-->
+    <tr>
+        <th colspan="5">Escenario 03 <br>
+           Un proveedor legítimo de software fue comprometido y distribuyó una actualización 
+            que incluía código malicioso, afectando a cientos de organizaciones que confiaban en él. Este 
+            escenario refleja una violación grave de la integridad de los sistemas y, en muchos casos, de la 
+            confidencialidad, al permitir accesos no autorizados posteriores.
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Integridad de los datos, autentificación</th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">Supply Chain Attack: ataque que explota una relación de confianza </th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Externa </th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Actualización de software comprometido, abuso de la cadena de suministro. </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Violación masiva de integridad del sistema</th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Verificar firmas digitales, retraso controlado de actualizaciones críticas.</th>
+    </tr>
+    <!--Escenario 4-->
+    <tr>
+        <th colspan="5">Escenario 04 <br>
+            Mediante campañas de phishing, atacantes obtuvieron credenciales válidas y accedieron 
+            a sistemas corporativos durante meses sin levantar alertas. Aunque la autenticación funcionó 
+            técnicamente, el servicio de autenticación fue comprometido al basarse en credenciales robadas, 
+            afectando también el control de acceso. 
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Autentificación, control de acceso </th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">Control compromise: credencial ha sido obtenida por una entidad no autorizada  </th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Externa </th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Phishing, los atacantes evitaron controles de autentificación. </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Acceso no autorizado a sistema de datos</th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Múltiple factor de autentificación, monitoreo de comportamiento de usuarios. </th>
+    </tr>
+    <!--Escenario 5-->
+    <tr>
+        <th colspan="5">Escenario 05 <br>
+           En ataques de ransomware avanzados, los atacantes eliminaron o cifraron los respaldos 
+            antes de afectar los sistemas productivos. Este hecho compromete directamente la disponibilidad y la 
+            integridad de la información, al impedir la recuperación.
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Disponibilidad, Integridad de los datos</th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">Data destruction: datos inaccesibles, availability attack: ataque de denegación de servicios.</th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Externa </th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Credenciales robadas, uso de ransomware para localizar y destruir. </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Eliminación total del plan de recuperación  </th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Backups inmutables </th>
+    </tr>
+    <!--Escenario 6-->
+    <tr>
+        <th colspan="5">Escenario 06 <br>
+            Un empleado con acceso legítimo extrajo bases de datos completas y las vendió a 
+            terceros, sin explotar vulnerabilidades técnicas. El servicio afectado fue principalmente la 
+            confidencialidad, junto con fallas en el control de acceso por exceso de privilegios. El RFC 4949 define 
+            este escenario como insider threat, destacando que el riesgo interno puede ser tan grave como el 
+            externo. La carencia de monitoreo y de políticas de mínimo privilegio fue determinante. 
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Confidencialidad de datos, control de acceso</th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">Insider threat: Amenaza proveniente de personas dentro de la organización </th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Interna </th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Uso indebido de credenciales y permisos legitimos </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Perdida masiva de confidencialidad  </th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Revisar y ajustar perimisos regularmente</th>
+    </tr>
+    <!--Escenario 7-->
+    <tr>
+        <th colspan="5">Escenario 07 <br>
+            Tras un ataque, los registros del sistema quedaron cifrados o alterados, impidiendo 
+            reconstruir la secuencia de eventos. Esto compromete la integridad de los datos y el no repudio, ya 
+            que no es posible demostrar qué ocurrió ni quién fue responsable. Desde el RFC 4949, se trata de una 
+            violación de evidentiary integrity y del audit trail. El impacto no solo es técnico, sino también 
+            probatorio y legal.
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Integridad de los datos, no repudio  </th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">Audit Trail: Registro cronológico de actividades, evidentiary Integrity: Propiedad que asegura que la evidencia digital no ha sido alterada.  </th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Externa </th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Usan acceso administrativo para modificar/eliminar logs</th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Imposibilidad de realizar un analisis forense efectivo </th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Almacenamiento inmutable de logs </th>
+    </tr>
+    <!--Escenario 8-->
+    <tr>
+        <th colspan="5">Escenario 08 <br>
+            Una actualización mal ejecutada provocó la caída simultánea de múltiples servicios 
+            críticos a nivel global. Aunque no existió un atacante, el servicio de disponibilidad fue gravemente 
+            afectado. El RFC 4949 contempla estos eventos como operational failure, recordando que la seguridad 
+            también se ve afectada por errores internos. La falta de pruebas previas y planes de reversión 
+            amplificó el impacto 
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Disponibilidad, Integridad de los datos</th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">Operational Failure: fallo que resulta de errores de procedimientos operativos   </th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Interna</th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Implementación de cambios sin pruebas adecuadas </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Perdidas financiaras masivas, Interrupción global de servicios  </th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Monitoreo proactivo </th>
+    </tr>
+    <!--Escenario 9-->
+     <tr>
+        <th colspan="5">Escenario 09 <br>
+             Atacantes replicaron sitios y correos oficiales para engañar a ciudadanos y obtener 
+              información sensible. Este escenario afecta la autenticación, al suplantar identidades legítimas, y la 
+              confidencialidad de los datos recolectados. El RFC 4949 lo clasifica como masquerade y phishing, 
+              subrayando el componente de ingeniería social. La ausencia de mecanismos de autenticación del 
+              dominio y de concientización facilitó el éxito del ataque.
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Autentificación, confidencialidad de los datos</th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">masquerade: Ataque donde una entidad finge ser una entidad diferente</th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Externa</th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Creación de sitios y correos falsos que imitan entidades legitimas  </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Robo de credenciales</th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Atentificaion del dominio</th>
+    </tr>
+    <!--Escenario 10-->
+     <tr>
+        <th colspan="5">Escenario 10 <br>
+             En algunos incidentes, tras exfiltrar información, los atacantes ejecutaron acciones 
+              destructivas para borrar sistemas completos y eliminar rastros. Se produce un compromiso total de la 
+              confidencialidad, la integridad y la disponibilidad, configurando uno de los peores escenarios posibles. 
+              El RFC 4949 describe este patrón como destructive attack, donde el objetivo no es solo el lucro, sino el 
+              daño irreversible. La detección tardía impidió cualquier contención efectiva.
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2">Servicio X.800 Comprometidos </th>
+        <th colspan="2">Confidencialidad de datos, integridad de datos, disponibilidad </th>
+    </tr>
+    <tr>
+        <th colspan="2">Definiciones aplicables RFC 4949. </th>
+        <th colspan="2">destructive Attack: "Ataque diseñado para causar daño físico o lógico permanente</th>
+    </tr>
+    <tr>
+        <th colspan="2">Tipo de amenaza </th>
+        <th colspan="2">Externa</th>
+    </tr>
+    <tr>
+        <th colspan="2">Vector de ataque </th>
+        <th colspan="2">Código malicioso específico para borra/sobrescribir datos </th>
+    </tr>
+    <tr>
+      <th colspan="2">Impacto tecnico/operativo</th>
+        <th colspan="2">Pérdida total de datos </th>
+    </tr>
+      <tr>
+        <th colspan="2">Medida de control / recomendada </th>
+        <th colspan="2">Deteccion temprana y respuesta inmediata </th>
+    </tr>
+  </tbody>
+</table>
+
+  <h5 class="t_tareas" id="c4_t2p1">Conclusión</h5>
+  <br>
+  <p style="text-align: justify;">Como conclusión puedo obtener que existen muchas variables y vulnerabilidades que se pueden 
+explotar y con esto puedo identificar muchas de ellas para poder tener más conocimiento al 
+respecto e intentar evitar esos fallos en la seguridad en el futuro. </p>
+<br><br>
+ <h5 class="t_tareas" id="c5_t2p1">Referencias</h5>
+ <a href="https://datatracker.ietf.org/doc/html/rfc4949"> RFC 4949 - Glosario de Seguridad en Internet, Versión 2</a>
+ <br><br><br>
+ <h5 class="t_tareas" id="c6_t2p1">Descargar Actividad</h5>
+ <br>
+ <button id="btn_descarga" type="button" class="btn btn-primary btn-lg" style="width: 25%;">Descargar</button>
+    </section>
+    <br><br>
+     <footer>
+      <div class="logos"><h4>Brian Salvador Espinoza Aguilar</h4>
+      <img src="/img/Github_dark.svg" width="30rem" height="20rem">
+      </div>
+      <hr width="50%" style="margin-left: 25%">
+      <h5 style="text-align: center;">Universidad Politécnica de San Luis Potosí</h5>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <script>
+  document.getElementById('btn_descarga').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'tareas/parcial1/175031-act02.pdf'; 
+    link.download = 'act02.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+  </script>
+</body>
+</html>
