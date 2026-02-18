@@ -83,12 +83,22 @@
           <h5 class="t_tareas">Contenido</h5>
           <br>
           <div class="list-group" style="width: 50%; margin-left: 25%;">
-            <a href="#c1_t4p1"> <button type="button" class="list-group-item list-group-item-action">Desarrollo</button></a>
-            <a href="#c2_t4p1"><button type="button" class="list-group-item list-group-item-action">Descargar archivo PDF</button></a>
+            <a href="#c1_t4p1"> <button type="button" class="list-group-item list-group-item-action">Introducción</button></a>
+            <a href="#c2_t4p1"> <button type="button" class="list-group-item list-group-item-action">Desarrollo</button></a>
+            <a href="#c3_t4p1"> <button type="button" class="list-group-item list-group-item-action">Conclusión</button></a>
+            <a href="#c4_t4p1"><button type="button" class="list-group-item list-group-item-action">Descargar archivo PDF</button></a>
           </div>
           <br>
           <br>
-          <h5 class="t_tareas" id="c1_t4p1">Desarrollo</h5>
+          <h5 class="t_tareas" id="c1_t4p1">Introducción</h5>
+          <p style="text-align: justify;">
+            La actividad presenta la implementación de reglas iptables para establecer políticas 
+            de seguridad en una red. A través de siete reglas específicas, se configura un firewall que permite gestionar el tráfico entrante y saliente, 
+            protegiendo los recursos de red mientras se mantiene la funcionalidad de servicios esenciales como web, correo y DNS.
+          </p>
+          <br>
+          <br>
+          <h5 class="t_tareas" id="c2_t4p1">Desarrollo</h5>
         <ol style="text-align: left;">
             <li>Establecer una política restrictiva. </li>
                 <p>R/ iptables -A INPUT -p tcp - -dports 80 -j DROP</p>
@@ -111,14 +121,24 @@
             <li>Permitir tráfico HTTP desde la red local a Internet. </li>
                 <p>R/ iptables -A INPUT -p tcp - -dports 80 -j ACCEPT</p>
         </ol>
-
+    <br>
+        <h5 class="t_tareas" id="c3_t4p1">Conclusión</h5>
+          <br>
+        <p style="text-align: justify;">
+          El conjunto de reglas iptables analizado establece un equilibrio entre seguridad y funcionalidad, 
+          priorizando el bloqueo de tráfico no autorizado, mientras se permiten conexiones 
+          legítimas ya establecidas y servicios específicos. Sin embargo, se identifican áreas de mejora como la necesidad 
+          de especificar puertos DNS, definir correctamente las direcciones IP de servidores, y ajustar las reglas HTTP para distinguir
+           entre tráfico local y de Internet, lo que fortalecería la postura de seguridad de la red.
+        </p>
         <br><br>
-         <h5 class="t_tareas" id="c2_t4p1">Descargar Actividad</h5>
+         <h5 class="t_tareas" id="c4_t4p1">Descargar Actividad</h5>
     <br>
     <button id="btn_descarga" type="button" class="btn btn-primary btn-lg" style="width: 25%;">Descargar</button>
     </section>
     <br>
     <br>
+
     <footer>
       <div class="logos"><h4>Brian Salvador Espinoza Aguilar</h4>
       <img src="img/Github_dark.svg" width="30rem" height="20rem">
