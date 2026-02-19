@@ -71,14 +71,24 @@
           <h5 class="t_tareas">Contenido</h5>
           <br>
           <div class="list-group" style="width: 50%; margin-left: 25%;">
-            <a href="#c1_t1p1"><button type="button" class="list-group-item list-group-item-action">Introduccion</button></a> 
-            <a href="#c2_t1p1"><button type="button" class="list-group-item list-group-item-action">Desarrollo</button></a> 
-            <a href="#c3_t1p1"><button type="button" class="list-group-item list-group-item-action">Conclusión</button></a> 
-            <a href="#c22_t1p1"><button type="button" class="list-group-item list-group-item-action">Descargar archivo PDF</button></a>
+            <a href="#c1_t3p1"><button type="button" class="list-group-item list-group-item-action">Introduccion</button></a> 
+            <a href="#c2_t3p1"><button type="button" class="list-group-item list-group-item-action">Desarrollo</button></a> 
+            <a href="#c3_t3p1"><button type="button" class="list-group-item list-group-item-action">Conclusión</button></a> 
+            <a href="#c4_31p1"><button type="button" class="list-group-item list-group-item-action">Descargar archivo PDF</button></a>
           </div>
           <br>
           <br>
-
+          <h5 class="t_tareas" id="c1_t3p1">Introducción</h5>
+          <br>
+          <p style="text-align: justify;">
+            En la administración de sistemas Linux, la seguridad y el control del tráfico de red son aspectos fundamentales.
+             Iptables es la herramienta de firewall por excelencia que permite gestionar este control, actuando como un filtro 
+             de paquetes que opera directamente en el núcleo del sistema. Su funcionamiento se basa en una estructura jerárquica 
+             y organizada: cuando un paquete de red llega al sistema, este debe atravesar diferentes niveles de decisión.
+          </p>
+          <br><br>
+          <h5 class="t_tareas" id="c2_t3p1">Desarrollo</h5>
+          <br><br>
           <ol style="text-align: left;">
             <li>Completa los espacios conforme se explica <br>
               <p><br> Cuando un paquete llega al sistema,, primero pasa por una <u>tabla</u>
@@ -165,8 +175,62 @@
                 o establecida
               </p>
             </li>
+
+            <li><b>Permitir tráfico HTTP entrante </b>
+              <p>iptables -A INPUT -p tcp --dports 80 -j ACCEPT</p>
+            </li>
+
+            <li><b>Permitir todo el tráfico saliente</b>
+              <p>iptables -A OUTPPUT -j ACCEPT</p>
+            </li>
+            <li><b>Permitir SSH solo desde la IP 192.168.1.50</b>
+              <p>iptables -A INPUT -p tcp -s 192.168.1.50 --dports 22 -j ACCEPT</p>
+            </li>
+
+            <li><b>Permitir tráfico TCP entrante a puertos 80 y 443 solo si es conexion establecida o relacionada</b>
+              <p>iptables -A INPUT -p tcp -m multiport --dports 80,443 -m state --state ESTABLISHED, RELATED -j ACCEPT</p>
+            </li>
+
+            <li><b>Permite el trafico TCP entrante por eth0 a 22,80 y 433, registrar intentos y permitir solo NEW y ESTABLISHED</b>
+              <p>iptables -A INPUT -p tcp -i eth0 -m multiport --dports 80,22,443 -m state --state NEW, ESTABLISHED -j ACCEPT</p>
+            </li>
           </ol>
+          <br><br>
+          <h5 class="t_tareas" id="c3_t3p1">Conclusión</h5>
+          <br>
+          <p style="text-align: justify;">
+            El recorrido por los fundamentos de iptables nos confirma su papel como una herramienta 
+            indispensable y poderosa para la seguridad perimetral en entornos Linux.
+            Concluimos y comprobamos que con una sola línea de comando puede implementar políticas de seguridad complejas, 
+            como permitir tráfico nuevo y establecido a servicios críticos 
+          </p>
+          <br><br>
+          <h5 class="t_tareas" id="c4_t1p1">Descargar actividad</h5>
+          <br>
+          <button id="btn_descarga" type="button" class="btn btn-primary btn-lg" style="width: 25%;">Descargar</button>
     </section>
+
+    <br><br>
+<!--Inicio del pie de pagina-->
+          <footer>
+            <div class="logos"><h4>Brian Salvador Espinoza Aguilar</h4>
+            <img src="img/Github_dark.svg" width="30rem" height="20rem">
+            </div>
+            <hr width="50%" style="margin-left: 25%">
+            <h5 style="text-align: center;">Universidad Politécnica de San Luis Potosí</h5>
+          </footer>
+
+          <!--Descargar el ddocumento con el boton-->
+<script>
+  document.getElementById('btn_descarga').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'tareas/parcial1/175031_act3.pdf'; 
+    link.download = 'act01.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
